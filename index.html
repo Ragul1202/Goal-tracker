@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+ Goal Tracker 
+</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<h1>
+🎯 Goal Tracker 
+</h1>
+
+<p>
+Daily → Weekly → Monthly Progress System
+</p>
+
+</header>
+
+<section class="dashboard">
+
+<div class="card">
+<h3>📅 Current Day</h3>
+<p id="currentDay">1</p>
+</div>
+
+<div class="card">
+<h3>📆 Current Week</h3>
+<p id="currentWeek">1</p>
+</div>
+
+<div class="card">
+<h3>🔥 Streak</h3>
+<p id="streak">0</p>
+</div>
+
+<div class="card">
+<h3>🏆 Best Streak</h3>
+<p id="bestStreak">0</p>
+</div>
+
+</section>
+
+<section class="circles">
+
+<div class="circle-card">
+
+<h2>Daily Average</h2>
+
+<svg width="220" height="220">
+
+<circle
+cx="110"
+cy="110"
+r="90"
+class="bg-circle"> </circle>
+
+<circle
+cx="110"
+cy="110"
+r="90"
+class="progress-circle"
+id="dailyCircle"> </circle>
+
+</svg>
+
+<div
+class="percentage"
+id="dailyPercent">
+
+0%
+
+</div>
+
+</div>
+
+<div class="circle-card">
+
+<h2>Weekly Average</h2>
+
+<svg width="220" height="220">
+
+<circle
+cx="110"
+cy="110"
+r="90"
+class="bg-circle"> </circle>
+
+<circle
+cx="110"
+cy="110"
+r="90"
+class="progress-circle"
+id="weeklyCircle"> </circle>
+
+</svg>
+
+<div
+class="percentage"
+id="weeklyPercent">
+
+0%
+
+</div>
+
+</div>
+
+<div class="circle-card">
+
+<h2>Monthly Average</h2>
+
+<svg width="220" height="220">
+
+<circle
+cx="110"
+cy="110"
+r="90"
+class="bg-circle"> </circle>
+
+<circle
+cx="110"
+cy="110"
+r="90"
+class="progress-circle"
+id="monthlyCircle"> </circle>
+
+</svg>
+
+<div
+class="percentage"
+id="monthlyPercent">
+
+0%
+
+</div>
+
+</div>
+
+</section>
+
+<section class="goal-section">
+
+<h2>
+Today's Goals
+</h2>
+
+<div class="goal-grid">
+
+<label><input type="checkbox" class="goal"> No Outside Food</label>
+
+<label><input type="checkbox" class="goal"> Drink 3L Water</label>
+
+<label><input type="checkbox" class="goal"> Run / Walking</label>
+
+<label><input type="checkbox" class="goal"> Sleep 8 Hours</label>
+
+<label><input type="checkbox" class="goal"> 100g+ Protein</label>
+
+<label><input type="checkbox" class="goal"> Supplements</label>
+
+<label><input type="checkbox" class="goal"> Amla</label>
+
+<label><input type="checkbox" class="goal"> Java Practice</label>
+
+<label><input type="checkbox" class="goal"> Japanese Practice</label>
+
+<label><input type="checkbox" class="goal"> Read Book</label>
+
+<label><input type="checkbox" class="goal"> Screen Time ≤ 1 Hour</label>
+
+</div>
+
+</section>
+
+<section class="actions">
+
+<button onclick="calculate()">
+📊 Calculate
+</button>
+
+<button onclick="nextDay()">
+➡️ Next Day
+</button>
+
+<button onclick="resetTracker()">
+🔄 Reset
+</button>
+
+</section>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
